@@ -16,7 +16,9 @@ modificar.
 o Si la clave existe, permite al usuario ingresar un nuevo valor y actualiza dicha
 entrada en el diccionario.
 """
-
+def pausaT(segundos):
+    import time
+    time.sleep(segundos)
 
 
 # Definición del diccionario inicial
@@ -39,7 +41,8 @@ def menu():
     print("1. Modificar valor de una clave existente")
     print("2. Eliminar una clave")
     print("3. Salir") 
-    option = input("Ingresa una opción: ")    
+    option = input("Ingresa una opción: ")  
+    pausaT(3)  
     return option
 
 def modificar_clave(inventario): 
@@ -48,6 +51,7 @@ def modificar_clave(inventario):
         nuevo_valor = input(f"Ingresa el nuevo valor para '{clave}': ")
         inventario[clave] = nuevo_valor
         print(f"El valor de '{clave}' ha sido actualizado a '{nuevo_valor}'.")
+        pausaT(3)
     else:
         print(f"La clave '{clave}' no existe en el inventario :(") 
 
@@ -72,6 +76,7 @@ while True:
         inventario = eliminar_clave(inventario)
     elif opcion == "3":
         print("Saliendo del programa; Gracias por usar BETA Nike:)")
+        pausaT(3)
         break
     else:
         print("Opción no válida:( Por favor, intenta nuevamente.")

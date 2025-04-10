@@ -63,22 +63,22 @@ while True:
     
     if opcion == "1":
         print("(***Tu potencial es infinito, atrévete a explorarlo.***")
-        pausaT(2)
+        pausaT(3)
         cls()
     elif opcion == "2":
         nombres = ["Alice", "Bob", "Charlie"]
         print("Lista de nombres:", nombres)
-        pausaT(4)
+        pausaT(3)
         cls()
     elif opcion == "3":
         print("Saliendo del programa; ¡gracias por participar :)")
-        pausaT(2)
+        pausaT(3)
         cls()
         break
         
     else:
         print("Opción no válida:( Por favor, intenta nuevamente.")
-        pausaT(2)
+        pausaT(3)
         cls()
 
 
